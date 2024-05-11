@@ -21,7 +21,10 @@ config :nerves,
 # * See https://hexdocs.pm/ssh_subsystem_fwup/readme.html for firmware updates
 
 config :nerves_ssh,
-  authorized_keys: ["ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDmsn8t3Sht3CAClKIpPO+KClIZz9i1ONRWLc10GgANy fhunleth@troodon-software.com"]
+  daemon_option_overrides: [
+    {:pwdfun, &Example.ssh_check_pass/2},
+    {:auth_method_kb_interactive_data, &Example.ssh_show_prompt/3}
+  ]
 
 # Configure the network using vintage_net
 # See https://github.com/nerves-networking/vintage_net for more information
