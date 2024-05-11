@@ -1,7 +1,6 @@
 # Raspberry Pi 5 Model B (64-bit)
 
-[![CircleCI](https://circleci.com/gh/nerves-project/nerves_system_rpi5.svg?style=svg)](https://circleci.com/gh/nerves-project/nerves_system_rpi5)
-[![Hex version](https://img.shields.io/hexpm/v/nerves_system_rpi5.svg "Hex version")](https://hex.pm/packages/nerves_system_rpi5)
+# This does not work and needs cleanup
 
 This is the base Nerves System configuration for the Raspberry Pi 5 Model B.
 
