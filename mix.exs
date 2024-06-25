@@ -1,7 +1,7 @@
-defmodule NervesSystemRpi5.MixProject do
+defmodule KioskSystemRpi5.MixProject do
   use Mix.Project
 
-  @github_organization "nerves-project"
+  @github_organization "fhunleth"
   @app :kiosk_system_rpi5
   @source_url "https://github.com/#{@github_organization}/#{@app}"
   @version Path.join(__DIR__, "VERSION")
@@ -75,7 +75,7 @@ defmodule NervesSystemRpi5.MixProject do
   end
 
   defp description do
-    "Nerves System - Raspberry Pi 5 (64-bits)"
+    "Kiosk System - Raspberry Pi 5 (64-bits)"
   end
 
   defp docs do
