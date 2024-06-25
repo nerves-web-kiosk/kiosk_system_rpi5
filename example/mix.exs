@@ -42,6 +42,7 @@ defmodule Example.MixProject do
 
       # Dependencies for all targets except :host
       {:nerves_pack, "~> 0.7.0", targets: @all_targets},
+      {:nerves_ssh, "~> 1.0", override: true, targets: @all_targets},
       {:example_ui, path: "../example_ui", targets: @all_targets, env: Mix.env()},
 
       # Dependencies for specific targets
