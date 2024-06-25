@@ -1,18 +1,25 @@
 defmodule Example.Application do
   use Application
 
-  @xdg_runtime_dir "/tmp/nerves_weston"
+  @xdg_runtime_dir "/run"
 
   @impl true
   def start(_type, _args) do
     children = [
       {Plug.Cowboy, scheme: :http, plug: Example.API, options: [port: 4000]},
-      {NervesWeston, tty: 1, xdg_runtime_dir: @xdg_runtime_dir, name: :weston, cli_args: ["--shell=kiosk-shell.so"]},
+      {NervesWeston,
+       tty: 1,
+       xdg_runtime_dir: @xdg_runtime_dir,
+       name: :weston,
+       daemon_opts: [log_output: :info, stderr_to_stdout: true],
+       cli_args: ["--shell=kiosk-shell.so"]},
       {NervesCog,
-       url: "http://localhost:4000",
+       url: "http://localhost:4001/dev/dashboard/home",
        fullscreen: true,
        xdg_runtime_dir: @xdg_runtime_dir,
        wayland_display: "wayland-1",
+       cli_args: ["--enable-write-console-messages-to-stdout=1"],
+       daemon_opts: [log_output: :info, stderr_to_stdout: true],
        name: :cog}
     ]
 
