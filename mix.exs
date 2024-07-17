@@ -1,7 +1,7 @@
 defmodule KioskSystemRpi5.MixProject do
   use Mix.Project
 
-  @github_organization "fhunleth"
+  @github_organization "nerves-web-kiosk"
   @app :kiosk_system_rpi5
   @source_url "https://github.com/#{@github_organization}/#{@app}"
   @version Path.join(__DIR__, "VERSION")
