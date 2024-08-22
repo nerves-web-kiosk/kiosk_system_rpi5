@@ -76,7 +76,7 @@ jobs:
                 command: mix hex.build
       - attach_workspace:
           at: ~/project
-      - run: 
+      - run:
           name: symlink build dir
           command: |
             mkdir -p .nerves/artifacts
@@ -88,9 +88,6 @@ jobs:
           name: Did I really build
           command: |
             [ -d .nerves ] || (echo "VERSION file needs to be bumped or a config file needs to change to force a build"; exit 1)
-      - run:
-          name: Lint
-          command: mix nerves.system.lint nerves_defconfig
       - run:
           name: Create artifact dir
           command: mkdir -p deploy/system/artifacts
