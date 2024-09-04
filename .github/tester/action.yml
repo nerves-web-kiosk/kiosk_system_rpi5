@@ -1,0 +1,15 @@
+name: Tester
+
+inputs:
+  github-token:
+    required: true
+
+runs:
+  using: composite
+  steps:
+    - name: Test gh
+      shell: bash
+      env:
+        GH_TOKEN: ${{ inputs.github-token }}
+      run: |
+        gh auth status

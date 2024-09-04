@@ -12,6 +12,15 @@ permissions:
   contents: read
 
 jobs:
+  quick-test:
+    runs-on: ubuntu-22.04
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/tester
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
   get-br-dependencies:
     runs-on: ubuntu-22.04
     steps:
