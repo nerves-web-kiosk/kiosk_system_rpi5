@@ -27,3 +27,13 @@ runtime: false, targets: :rpi5}`.
 Please see the
 [kiosk_example](https://github.com/nerves-web-kiosk/kiosk_example) project for
 an example of how to use this in a Nerves project.
+
+## RP1 PIO
+
+The `rpi1-pio` device driver allows use of the PIO hardware using
+[`piolib`](https://github.com/raspberrypi/utils/tree/master/piolib). If you
+don't see `/dev/pio0`, the most likely cause is that you need to update your
+Raspberry Pi's boot EEPROM. See
+[rpi-eeprom](https://github.com/raspberrypi/rpi-eeprom) for binaries. It may be
+easier to upgrade the EEPROM via RaspberryPi OS if the instructions aren't
+clear.
