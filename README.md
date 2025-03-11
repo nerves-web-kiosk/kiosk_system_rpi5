@@ -1,6 +1,8 @@
 # Kiosk System for Raspberry Pi 5 Model B (64-bit)
 
+[![Hex version](https://img.shields.io/hexpm/v/kiosk_system_rpi5.svg "Hex version")](https://hex.pm/packages/kiosk_system_rpi5)
 [![CI](https://github.com/nerves-web-kiosk/kiosk_system_rpi5/actions/workflows/ci.yml/badge.svg)](https://github.com/nerves-web-kiosk/kiosk_system_rpi5/actions/workflows/ci.yml)
+[![REUSE status](https://api.reuse.software/badge/github.com/nerves-web-kiosk/kiosk_system_rpi5)](https://api.reuse.software/info/github.com/nerves-web-kiosk/kiosk_system_rpi5)
 
 This is a specialised version of the
 [nerves_system_rpi5](https://github.com/nerves-project/nerves_system_rpi5) that
