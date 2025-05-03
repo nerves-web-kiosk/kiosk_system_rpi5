@@ -34,6 +34,9 @@ camera_auto_detect=1
 # Automatically load overlays for detected DSI displays
 display_auto_detect=1
 
+# If using the Raspberry Pi Touch Display 2, put it in landscape mode
+dtoverlay=vc4-kms-dsi-ili9881-7inch,rotation=90
+
 # Enable DRM VC4 V3D driver
 dtoverlay=vc4-kms-v3d
 max_framebuffers=2
