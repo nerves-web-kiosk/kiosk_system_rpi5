@@ -37,6 +37,10 @@ display_auto_detect=1
 # If using the Raspberry Pi Touch Display 2, put it in landscape mode
 dtoverlay=vc4-kms-dsi-ili9881-7inch,rotation=90
 
+# Waveshare 10.1" DSI Touch Display support (800x1280)
+# Use DSI1 by default (recommended for Pi5)
+dtoverlay=vc4-kms-dsi-waveshare-panel-v2,10_1_inch_a,rotation=90
+
 # Enable DRM VC4 V3D driver
 dtoverlay=vc4-kms-v3d
 max_framebuffers=2
