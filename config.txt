@@ -35,7 +35,7 @@ camera_auto_detect=1
 display_auto_detect=1
 
 # If using the Raspberry Pi Touch Display 2, put it in landscape mode
-dtoverlay=vc4-kms-dsi-ili9881-7inch,rotation=90
+#dtoverlay=vc4-kms-dsi-ili9881-7inch,rotation=90
 
 # Waveshare 10.1" DSI Touch Display support (800x1280)
 # Use DSI1 by default (recommended for Pi5)
