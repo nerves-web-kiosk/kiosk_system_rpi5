@@ -4,6 +4,9 @@
 [![CI](https://github.com/nerves-web-kiosk/kiosk_system_rpi5/actions/workflows/ci.yml/badge.svg)](https://github.com/nerves-web-kiosk/kiosk_system_rpi5/actions/workflows/ci.yml)
 [![REUSE status](https://api.reuse.software/badge/github.com/nerves-web-kiosk/kiosk_system_rpi5)](https://api.reuse.software/info/github.com/nerves-web-kiosk/kiosk_system_rpi5)
 
+*This is the `main` branch. If you are customizing a `v0.x` system, please see
+the `maint-v0.x` branch.*
+
 This is a specialised version of the
 [nerves_system_rpi5](https://github.com/nerves-project/nerves_system_rpi5) that
 includes the required packages to run a fullscreen web browser in kiosk mode.
