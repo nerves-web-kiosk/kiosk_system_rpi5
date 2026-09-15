@@ -109,6 +109,7 @@ defmodule KioskSystemRpi5.MixProject do
       "fwup_include",
       "rootfs_overlay",
       "CHANGELOG.md",
+      "busybox.fragment",
       "cmdline-a.txt",
       "cmdline-b.txt",
       "config.txt",
