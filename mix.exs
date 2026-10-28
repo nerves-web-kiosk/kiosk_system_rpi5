@@ -121,7 +121,7 @@ defmodule KioskSystemRpi5.MixProject do
       "nerves_defconfig",
       "post-build.sh",
       "post-createfs.sh",
-      "ramoops-pi4-overlay.dts",
+      "ramoops-pi5-overlay.dts",
       "README.md",
       "REUSE.toml",
       "VERSION"
