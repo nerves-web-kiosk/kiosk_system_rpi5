@@ -12,6 +12,18 @@ follows:
    releases, and Linux kernel updates. They're also made to fix bugs and add
    features to the build infrastructure.
 
+## v2.2.2
+
+* Changes
+  * Use Nerves 2 to create official system artifacts. Generated artifacts work
+    on both Nerves 1 and Nerves 2 like in the previous release.
+  * Publish SHA256 checksums (checksum.exs) to Hex.pm
+  * Fix the ramoops/pstore overlay so it works again (re-synced with upstream)
+  * Remove hardcoded BR2_CCACHE since it's build-time configurable now
+
+* Updated dependencies
+  * Linux 6.18.50
+
 ## v2.2.1
 
 This is a security and bug fix release.
